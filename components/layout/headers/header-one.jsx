@@ -1,19 +1,26 @@
 "use client";
-import Social from "@/components/data/social";
+import { MdOutlineArrowDropDown } from "react-icons/md";
 import Link from "next/link";
 import MainMenu from "./header-menu";
 import Search from "./search";
 import { useState } from "react";
 import SideBar from "./offcanvas";
-// import logo1 from "../../../public/assets/img/logo-1.png";
 import logo1 from "../../../public/assets/img/LogoKGE.png";
 import logo2 from "../../../public/assets/img/LogoKGE.png";
 import MobileMenuPopup from "./mobile-menu/menu-area";
+import Eng from "../../../public/assets/img/eng-logo.png";
+import Thai from "../../../public/assets/img/thai-logo.png";
 
 const HeaderOne = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [menuSidebar, setMenuSidebar] = useState(false);
   const [search, setSearch] = useState(false);
+  const [selectedLanguage, setSelectedLanguage] = useState("English");
+
+  const handleLanguageChange = (event) => {
+    setSelectedLanguage(event.target.value);
+  };
+
   return (
     <>
       <div className="topBar__one">
@@ -36,11 +43,31 @@ const HeaderOne = () => {
                 </ul>
               </div>
             </div>
+
             <div className="col-lg-4">
               <div className="topBar__one-right t-right lg-t-center">
                 <div className="topBar__one-right-social">
-                  <h6>Follow Us</h6>
-                  <Social />
+                  <label
+                    htmlFor="language-select"
+                    className="px-2"
+                    style={{ color: "gray" }}
+                  >
+                    Choose Language
+                  </label>
+                  <select
+                    id="language-select"
+                    value={selectedLanguage}
+                    onChange={handleLanguageChange}
+                    className="select"
+                    style={{
+                      backgroundColor: "transparent",
+                      border: "none",
+                      color: "gray",
+                    }}
+                  >
+                    <option value="English">English</option>
+                    <option value="Thai">Thai</option>
+                  </select>
                 </div>
               </div>
             </div>
