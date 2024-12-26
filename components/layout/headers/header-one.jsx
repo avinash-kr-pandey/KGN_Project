@@ -50,7 +50,7 @@ const HeaderOne = () => {
       <div className="header__area">
         <div className="custom__container">
           <div className="header__area-menubar">
-            <div className="header__area-menubar-left one">
+            <div className="">
               <div className="header__area-menubar-left-logo">
                 <Link href="/">
                   <img src={logo1.src} alt="logo" />
