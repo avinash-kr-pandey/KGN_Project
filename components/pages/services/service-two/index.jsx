@@ -16,7 +16,7 @@ const ServicePageTwo = () => {
     return (
         <>
             <SEO pageTitle="Services Two" />
-            <SwitchTab />
+            {/* <SwitchTab /> */}
             <HeaderOne />
             <BreadCrumb title="Services Two" innerTitle="Services Two" />
             <ServicesMain />

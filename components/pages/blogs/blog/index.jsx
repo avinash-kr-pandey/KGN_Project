@@ -13,7 +13,7 @@ const BlogGrid = () => {
     return (
         <>
             <SEO pageTitle='Blog Grid' />
-            <SwitchTab />
+            {/* <SwitchTab /> */}
             <HeaderOne />
             <BreadCrumb title="Blog Grid" innerTitle="Blog Grid" />
             <BlogGridMain />

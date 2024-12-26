@@ -8,17 +8,18 @@ import SideBar from "./offcanvas";
 import logo1 from "../../../public/assets/img/LogoKGE.png";
 import logo2 from "../../../public/assets/img/LogoKGE.png";
 import MobileMenuPopup from "./mobile-menu/menu-area";
-import Eng from "../../../public/assets/img/eng-logo.png";
-import Thai from "../../../public/assets/img/thai-logo.png";
+import i18n from "i18next";
+import { useTranslation } from "react-i18next";
 
 const HeaderOne = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [menuSidebar, setMenuSidebar] = useState(false);
   const [search, setSearch] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState("English");
+  const { t, i18n } = useTranslation();
 
   const handleLanguageChange = (event) => {
-    setSelectedLanguage(event.target.value);
+    const selectedLang = event.target.value;
+    i18n.changeLanguage(selectedLang); // Update the language dynamically
   };
 
   return (
@@ -31,13 +32,14 @@ const HeaderOne = () => {
                 <ul>
                   <li>
                     <Link href="mailto:need.help@gmail.com">
-                      <i className="flaticon-envelope"></i>need.help@gmail.com
+                      <i className="flaticon-envelope"></i>{" "}
+                      {t("needHelp")}: need.help@gmail.com
                     </Link>
                   </li>
                   <li>
                     <Link href="https://google.com/maps">
-                      <i className="flaticon-placeholder"></i>2464 Royal Ln.
-                      Mesa, New Jersey 45463
+                      <i className="flaticon-placeholder"></i>{" "}
+                      {t("address")}: 2464 Royal Ln., Mesa, NJ 45463
                     </Link>
                   </li>
                 </ul>
@@ -52,11 +54,10 @@ const HeaderOne = () => {
                     className="px-2"
                     style={{ color: "gray" }}
                   >
-                    Choose Language
+                    {t("chooseLanguage")}
                   </label>
                   <select
                     id="language-select"
-                    value={selectedLanguage}
                     onChange={handleLanguageChange}
                     className="select"
                     style={{
@@ -65,8 +66,8 @@ const HeaderOne = () => {
                       color: "gray",
                     }}
                   >
-                    <option value="English">English</option>
-                    <option value="Thai">Thai</option>
+                    <option value="en">{t("english")}</option>
+                    <option value="th">{t("thai")}</option>
                   </select>
                 </div>
               </div>
@@ -110,7 +111,7 @@ const HeaderOne = () => {
               </div>
               <div className="header__area-menubar-right-btn">
                 <Link className="btn-one" href="/request-quote">
-                  Talk with us
+                  {t("talkWithUs")}
                 </Link>
               </div>
               <div className="header__area-menubar-right-responsive-menu menu__bar">

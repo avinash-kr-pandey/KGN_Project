@@ -22,7 +22,7 @@ const HomeOne = () => {
         <div>
             <SEO pageTitle='Solar Energy' />
             <HeaderOne />
-            <SwitchTab />
+            {/* <SwitchTab /> */}
             <BannerOne />
             <Features />
             <About />
