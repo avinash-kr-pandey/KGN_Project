@@ -3,6 +3,55 @@
   \*************************************************************************************************************************************************************************************************************************************************************/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&display=swap');
+
+
+
+
+/* Hide the Google Translate icon */
+#google_translate_element .goog-te-gadget-icon {
+  display: none !important;
+}
+
+/* Hide the arrow (dropdown indicator) */
+.goog-te-gadget-simple .goog-te-menu-value span:nth-child(3) {
+  display: none !important;
+  color: white;
+}
+
+/* Optional: Adjust the text alignment */
+.goog-te-gadget-simple .goog-te-menu-value {
+  padding-left: 0 !important; /* Remove extra space left by the hidden icon */
+  color: white;
+}
+
+
+/* Style the Google Translate widget */
+.goog-te-gadget-simple {
+  /* background: none !important;  */
+  border: 1px solid white !important; /* Add white border */
+  padding: 5px 10px; /* Add padding */
+  border-radius: 5px; /* Optional: Rounded corners */
+  display: inline-block; /* Ensure it fits content */
+}
+
+/* Style the text "Select Language" */
+.goog-te-gadget-simple .goog-te-menu-value {
+  /* color: white !important; */
+
+  font-weight: bold; /* Optional: Make text bold */
+  text-transform: capitalize; /* Optional: Capitalize text */
+}
+
+/* Hide the dropdown arrow */
+.goog-te-gadget-simple .goog-te-menu-value span:nth-child(3) {
+  display: none !important; /* Remove arrow */
+}
+
+/* Hide the icon */
+#google_translate_element .goog-te-gadget-icon {
+  display: none !important; /* Remove Google Translate icon */
+}
+
 /*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./public/assets/css/fontawesome.css ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************/
