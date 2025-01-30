@@ -69,7 +69,7 @@ const HeaderOne = () => {
       </Script>
       {/* <div className="header-wrapper flex flex-row"> */}
       {/* Top Bar */}
-      <div className="topBar__one">
+      <div className="topBar__one border">
         <div className="custom__container">
           <div className="row al-center">
             <div className="col-lg-8">
