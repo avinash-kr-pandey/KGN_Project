@@ -14,7 +14,7 @@ const TeamPageTwo = () => {
           pageTitle="Services
 "
         />
-        {/* <SwitchTab /> */}
+        <SwitchTab />
         <HeaderOne />
         <BreadCrumb title="Team Two" innerTitle="Team Two" />
         <TeamMain />

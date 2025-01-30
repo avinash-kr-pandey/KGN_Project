@@ -13,7 +13,7 @@ const BlogDetails = ({singleData}) => {
     return (
         <>
             <SEO pageTitle={singleData?.title} />
-            {/* <SwitchTab /> */}
+            <SwitchTab />
             <HeaderOne />
             <BreadCrumb title={firstThreeWords} innerTitle={singleData?.title} />
             <BlogSingleMain singleData={singleData}/>
