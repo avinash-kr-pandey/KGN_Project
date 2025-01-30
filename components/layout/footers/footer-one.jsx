@@ -67,7 +67,8 @@ const FooterOne = () => {
                   <div className="footer__area-widget-company">
                     <p>
                       <Link href="https://google.com/maps">
-                        8502 Preston Rd. Inglewood, Maine 98380 US
+                        Office: 20th Floor, 555/52 SSP Tower 1, Sukhumvit Soi
+                        63, Klongton Nuea, Watthana, Bangkok 10110
                       </Link>
                     </p>
                     <div className="social__icon mt-60">
@@ -83,10 +84,13 @@ const FooterOne = () => {
                       <h6>Phone</h6>
                       <div className="footer__area-widget-info mb-35">
                         <p>
-                          <Link href="tel:+12(456)65878">+12(456)658 78</Link>
+                          <Link href="tel:+6627116723">
+                            {" "}
+                            Tel: +6627116723
+                          </Link>
                         </p>
                         <p>
-                          <Link href="tel:+12(518)45145">+12(518)451 45</Link>
+                          <Link href="Fax: +6627116724">Fax: +6627116724</Link>
                         </p>
                       </div>
                       <h6>Email</h6>

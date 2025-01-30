@@ -52,6 +52,41 @@
   display: none !important; /* Remove Google Translate icon */
 }
 
+.topBar__one {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  height: 8vh;
+}
+.topBar__one-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.header__area {
+  position: fixed; 
+  top:8%;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+   background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
 /*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./public/assets/css/fontawesome.css ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************/
@@ -10682,3 +10717,21 @@ Responsive Menu Css
 .dark-mode .mode__switch span::after {
   background-image: url(/_next/static/media/moon-dark.b19defdb.png);
 }/*# sourceMappingURL=style.css.map */
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./components/layout/headers/header.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+.topBar__one {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  height: 8vh;
+}
+
+
+
+
+
+

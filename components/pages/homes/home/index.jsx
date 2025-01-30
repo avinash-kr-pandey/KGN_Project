@@ -16,29 +16,35 @@ import Features from "./features";
 import ChooseUs from "./choose-us";
 import Team from "./team";
 import bgImage from "../../../../public/assets/img/shape/shape-9.png";
+import Map from "./map";
 
 const HomeOne = () => {
     return (
-        <div>
-            <SEO pageTitle='Solar Energy' />
-            <HeaderOne />
-            <SwitchTab />
-            <BannerOne />
-            <Features />
-            <About />
-            <Services />
-            <CtaArea />
-            <ChooseUs />            
-            <Portfolio />
-            <WorkArea />
-            <Team />
-            <div className="testimonial__one section-padding" style={{backgroundImage: `url(${bgImage.src})`}}>
-                <Testimonial />
-            </div>
-            <Blog />
-            <FooterOne />
-            <ScrollToTop />
+      <div>
+        <SEO pageTitle="Solar Energy" />
+        <HeaderOne />
+        <SwitchTab />
+        <BannerOne />
+        <Features />
+        <About />
+        <Services />
+
+        <CtaArea />
+        <ChooseUs />
+        <Portfolio />
+        <WorkArea />
+        <Team />
+        <div
+          className="testimonial__one section-padding"
+          style={{ backgroundImage: `url(${bgImage.src})` }}
+        >
+          <Testimonial />
         </div>
+        <Blog />
+        <Map />
+        <FooterOne />
+        <ScrollToTop />
+      </div>
     );
 };
 

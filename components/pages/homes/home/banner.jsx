@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Autoplay, Navigation} from 'swiper/modules';
-import banner1 from "../../../../public/assets/img/banner/banner-1.jpg";
-import banner2 from "../../../../public/assets/img/banner/banner-3.jpg";
+import banner1 from "../../../../public/assets/img/banner/banner-03.jpg";
+import banner2 from "../../../../public/assets/img/banner/banner-02.jpg";
 import bannerBg from "../../../../public/assets/img/shape/shape-3.png";
 import Link from "next/link";
 import Count from "../../common/count";

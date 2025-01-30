@@ -56,3 +56,38 @@
 #google_translate_element .goog-te-gadget-icon {
   display: none !important; /* Remove Google Translate icon */
 }
+
+.topBar__one {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  height: 8vh;
+}
+.topBar__one-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.header__area {
+  position: fixed; 
+  top:8%;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+   background-color: white;
+}
+
+
+
+
+
+
+
+
+

@@ -3,6 +3,7 @@
     "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
+      "static/css/app/page.css",
       "static/chunks/app/page.js"
     ],
     "/layout": [
@@ -11,9 +12,22 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
+    "/about-us/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/about-us/page.css",
+      "static/chunks/app/about-us/page.js"
+    ],
+    "/team-two/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/team-two/page.css",
+      "static/chunks/app/team-two/page.js"
+    ],
     "/contact/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
+      "static/css/app/contact/page.css",
       "static/chunks/app/contact/page.js"
     ]
   }
