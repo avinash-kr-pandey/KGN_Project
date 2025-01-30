@@ -17,7 +17,7 @@ import ChooseUs from "./choose-us";
 const HomeTwo = ({addClass}) => {
     return (
         <>
-            <SEO pageTitle="Wind Energy" />
+            <SEO pageTitle="KGN Energy" />
             <SwitchTab addClass={addClass} />
             <HeaderTwo addClass={addClass} />
             <BannerTwo />

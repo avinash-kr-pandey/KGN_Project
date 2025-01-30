@@ -11,7 +11,7 @@ import FormArea from "./form";
 const ContactTwo = () => {
     return (
         <>
-            <SEO pageTitle="Contact Two" />
+            <SEO pageTitle="Contact second" />
             {/* <SwitchTab /> */}
             <HeaderOne />
             <BreadCrumb title="Contact Two" innerTitle="Contact Two" />

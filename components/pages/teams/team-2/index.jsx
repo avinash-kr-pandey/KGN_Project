@@ -9,15 +9,18 @@ import SwitchTab from "../../common/dark-light";
 
 const TeamPageTwo = () => {
     return (
-        <>
-            <SEO pageTitle='Team Two' />
-            {/* <SwitchTab /> */}
-            <HeaderOne />
-            <BreadCrumb title='Team Two' innerTitle='Team Two'/>
-            <TeamMain />
-            <FooterOne />
-            <ScrollToTop />
-        </>
+      <>
+        <SEO
+          pageTitle="Services
+"
+        />
+        {/* <SwitchTab /> */}
+        <HeaderOne />
+        <BreadCrumb title="Team Two" innerTitle="Team Two" />
+        <TeamMain />
+        <FooterOne />
+        <ScrollToTop />
+      </>
     );
 };
 

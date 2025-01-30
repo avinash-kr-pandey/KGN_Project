@@ -10,7 +10,7 @@ import SwitchTab from "../../common/dark-light";
 const PortfolioFourColumns = () => {
     return (
         <>
-            <SEO pageTitle='Portfolio Grid - 04 Columns' />
+            <SEO pageTitle='Portfolio ' />
             <SwitchTab />
             <HeaderOne />
             <BreadCrumb title="04 Columns" innerTitle="Portfolio Grid" />

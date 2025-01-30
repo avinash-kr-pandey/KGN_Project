@@ -84,7 +84,6 @@ const HeaderOne = () => {
                 </ul>
               </div>
             </div>
-
             <div className="col-lg-4">
               <div className="topBar__one-right t-right lg-t-center">
                 <div className="language-row">
@@ -95,7 +94,6 @@ const HeaderOne = () => {
           </div>
         </div>
       </div>
-
       <div className="header__area">
         <div className="custom__container">
           <div className="header__area-menubar">
@@ -113,23 +111,23 @@ const HeaderOne = () => {
             </div>
             <div className="header__area-menubar-right">
               <div className="header__area-menubar-right-search">
-                <div className="search">
+                {/* <div className="search">
                   <span
                     className="header__area-menubar-right-search-icon open"
                     onClick={() => setSearch(true)}
                   >
                     <i className="fal fa-search"></i>
                   </span>
-                </div>
+                </div> */}
               </div>
-              <div className="header__area-menubar-right-sidebar">
+              {/* <div className="header__area-menubar-right-sidebar">
                 <div
                   className="header__area-menubar-right-sidebar-popup-icon"
                   onClick={() => setSidebarOpen(true)}
                 >
                   <i className="flaticon-menu-2"></i>
                 </div>
-              </div>
+              </div> */}
               <div className="header__area-menubar-right-btn">
                 <Link className="btn-one" href="/request-quote">
                   {t("talkWithUs")}

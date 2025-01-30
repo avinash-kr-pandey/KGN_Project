@@ -12,7 +12,7 @@ import SwitchTab from "../../common/dark-light";
 const BlogGrid = () => {
     return (
         <>
-            <SEO pageTitle='Blog Grid' />
+            <SEO pageTitle='Our Blogs' />
             {/* <SwitchTab /> */}
             <HeaderOne />
             <BreadCrumb title="Blog Grid" innerTitle="Blog Grid" />
