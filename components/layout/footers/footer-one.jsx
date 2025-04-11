@@ -120,6 +120,9 @@ const FooterOne = () => {
                           <li>
                             <Link href="/contact">Contact Us</Link>
                           </li>
+                          <li>
+                            <Link href="/career">Career</Link>
+                          </li>
                         </ul>
                       </div>
                     </div>
