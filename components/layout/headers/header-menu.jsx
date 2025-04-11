@@ -62,9 +62,15 @@ const MainMenu = () => {
               <Link href="/faq">FAQs</Link>
             </li>
             <li>
-              <Link href="/portfolio/4-columns">Media Kit</Link>
+              <Link href="https://drive.google.com/drive/folders/1JlTjR_EBmmA4j0-tHN-UGFTxuhDNORbd?usp=sharing">
+                Media Kit
+              </Link>
             </li>
-            <li><Link href='/blog/impact-of-energy-on-reducing-carbon-footprint'>Blog</Link></li>
+            <li>
+              <Link href="/blog/impact-of-energy-on-reducing-carbon-footprint">
+                Blog
+              </Link>
+            </li>
           </ul>
         </li>
         <li className="">

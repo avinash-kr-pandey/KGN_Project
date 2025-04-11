@@ -9,7 +9,13 @@ import logo2 from "../../../public/assets/img/LogoKGE.png";
 import MobileMenuPopup from "./mobile-menu/menu-area";
 import { useTranslation } from "react-i18next";
 import Script from "next/script";
-import "./header.css"
+import "./header.css";
+import { FaWhatsapp } from "react-icons/fa";
+import { IoLogoInstagram } from "react-icons/io";
+import { IoLogoTiktok } from "react-icons/io5";
+import { FaFacebook } from "react-icons/fa";
+import { FaLine } from "react-icons/fa";
+import { IoLogoYoutube } from "react-icons/io5";
 
 const HeaderOne = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -24,7 +30,6 @@ const HeaderOne = () => {
         const languageMap = {
           en: "English",
           th: "Thai",
-         
         };
         setSelectedLanguage(languageMap[selected] || "English");
       }
@@ -44,7 +49,6 @@ const HeaderOne = () => {
       menuSidebar || sidebarOpen ? "hidden" : "auto";
   }, [menuSidebar, sidebarOpen]);
 
-
   return (
     <>
       {/* Google Translate Scripts */}
@@ -55,18 +59,19 @@ const HeaderOne = () => {
       />
       <Script id="google-translate-init" strategy="lazyOnload">
         {`
-          function googleTranslateElementInit() {
-            new google.translate.TranslateElement(
-              {
-                pageLanguage: 'en',
-                includedLanguages: 'en,hi,th,fr',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-              },
-              'google_translate_element'
-            );
-          }
-        `}
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: 'en',
+          includedLanguages: 'en,th', // Only English and Thai
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        },
+        'google_translate_element'
+      );
+    }
+  `}
       </Script>
+
       {/* <div className="header-wrapper flex flex-row"> */}
       {/* Top Bar */}
       <div className="topBar__one border">
@@ -74,23 +79,107 @@ const HeaderOne = () => {
           <div className="row al-center">
             <div className="col-lg-8">
               <div className="topBar__one-left lg-t-center">
-                <ul>
+                <ul className="flex items-center">
                   <li>
                     <Link href="tel:+1234567890">
-                      <i className="fa fa-phone"></i> Telephone: +6627116723
+                      <i className="fa fa-phone"></i> +66 27116723
                     </Link>
                   </li>
-                  <li>
+                  <li className="ml-4">
                     <Link href="tel:+1234567890">
-                      <i className="fa fa-phone"></i> Fax: +6627116724
+                      <i className="fa fa-phone"></i> +66 27116724
                     </Link>
                   </li>
                 </ul>
               </div>
             </div>
             <div className="col-lg-4">
-              <div className="topBar__one-right t-right lg-t-center">
-                <div id="google_translate_element" className="check-text"></div>
+              <div className="d-flex justify-content-between align-items-center">
+                <ul className="d-flex list-unstyled mb-0 gap-4">
+                  <li className="mr-3">
+                    <a
+                      href="https://wa.me/your-whatsapp-number"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaWhatsapp
+                        color="white"
+                        size={25}
+                        className="hover:scale-105 cursor-pointer transition-transform duration-300"
+                      />
+                    </a>
+                  </li>
+                  <li className="mr-3">
+                    <a
+                      href="https://www.instagram.com/your-instagram-profile"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <IoLogoInstagram
+                        color="white"
+                        size={25}
+                        className="hover:scale-105 cursor-pointer transition-transform duration-300"
+                      />
+                    </a>
+                  </li>
+                  <li className="mr-3">
+                    <a
+                      href="https://www.tiktok.com/@your-tiktok-profile"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaLine
+                        color="white"
+                        size={25}
+                        className="hover:scale-105 cursor-pointer transition-transform duration-300"
+                      />
+                    </a>
+                  </li>
+                  <li className="mr-3">
+                    <a
+                      href="https://wa.me/your-whatsapp-number"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <IoLogoYoutube
+                        color="white"
+                        size={25}
+                        className="hover:scale-105 cursor-pointer transition-transform duration-300"
+                      />
+                    </a>
+                  </li>
+                  <li className="mr-3">
+                    <a
+                      href="https://wa.me/your-whatsapp-number"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaFacebook
+                        color="white"
+                        size={25}
+                        className="hover:scale-105 cursor-pointer transition-transform duration-300"
+                      />
+                    </a>
+                  </li>
+                  <li className="mr-3">
+                    <a
+                      href="https://wa.me/your-whatsapp-number"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <IoLogoTiktok
+                        color="white"
+                        size={25}
+                        className="hover:scale-105 cursor-pointer transition-transform duration-300"
+                      />
+                    </a>
+                  </li>
+                </ul>
+
+                <div
+                  id="google_translate_element"
+                  className="check-text ml-4"
+                ></div>
               </div>
             </div>
           </div>

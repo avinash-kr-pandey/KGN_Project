@@ -1,4 +1,4 @@
-// File: D:\NewProject\KGN\KGN_Project\app\page.jsx
+// File: D:\KGN\KGN_Project\app\page.jsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

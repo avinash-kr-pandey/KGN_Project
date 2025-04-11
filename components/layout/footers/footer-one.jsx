@@ -30,7 +30,7 @@ const FooterOne = () => {
                               <span>Need any help</span>
                               <h6>
                                 <Link href="tel:+123(548)5256">
-                                  +123 (548) 5256
+                                  +66 20776157
                                 </Link>
                               </h6>
                             </div>
@@ -84,10 +84,7 @@ const FooterOne = () => {
                       <h6>Phone</h6>
                       <div className="footer__area-widget-info mb-35">
                         <p>
-                          <Link href="tel:+6627116723">
-                            {" "}
-                            Tel: +6627116723
-                          </Link>
+                          <Link href="tel:+6627116723"> Tel: +6627116723</Link>
                         </p>
                         <p>
                           <Link href="Fax: +6627116724">Fax: +6627116724</Link>

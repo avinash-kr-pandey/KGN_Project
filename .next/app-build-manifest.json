@@ -12,23 +12,17 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/about-us/page": [
+    "/faq/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/about-us/page.css",
-      "static/chunks/app/about-us/page.js"
+      "static/css/app/faq/page.css",
+      "static/chunks/app/faq/page.js"
     ],
-    "/team-two/page": [
+    "/[not-found]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/team-two/page.css",
-      "static/chunks/app/team-two/page.js"
-    ],
-    "/contact/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/contact/page.css",
-      "static/chunks/app/contact/page.js"
+      "static/css/app/[not-found]/page.css",
+      "static/chunks/app/[not-found]/page.js"
     ]
   }
 }

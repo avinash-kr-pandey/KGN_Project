@@ -9,15 +9,20 @@ import FaqPage from "./faq-page";
 
 const Faq = () => {
     return (
-        <>        
-            <SEO pageTitle='FAQ' />
-            {/* <SwitchTab /> */}
-            <HeaderOne />
-            <BreadCrumb title='Question & Ans.' innerTitle="FAQ's" />
-            <FaqPage />
-            <FooterOne />
-            <ScrollToTop />
-        </>
+      <>
+        <SEO pageTitle="FAQ" />
+        {/* <SwitchTab /> */}
+        <HeaderOne />
+        <BreadCrumb
+          title="Question & Answers"
+          innerTitle="FAQ's"
+          backgroundImage="/assets/img/faq/solar.png"
+          
+        />
+        <FaqPage />
+        <FooterOne />
+        <ScrollToTop />
+      </>
     );
 };
 
