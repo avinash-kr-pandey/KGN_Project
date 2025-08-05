@@ -40,7 +40,7 @@ const Portfolio = () => {
                     <div className="col-xl-12">
                         <div className="portfolio__three-title t-center">
                             <span className="subtitle-three">Our Work</span>
-                            <h2>Solar Project Gallery</h2>
+                            {/* <h2>Solar Project Gallery</h2> */}
                         </div>
                     </div>
                 </div>

@@ -2,13 +2,14 @@ import Social from "@/components/data/social";
 import Link from "next/link";
 import logo from "../../../public/assets/img/LogoKGE.png";
 import ctaBg from "../../../public/assets/img/shape/shape-7.png";
-import avatar from "../../../public/assets/img/avatar/avatar-5.png";
+// import avatar from "../../../public/assets/img/avatar/avatar-5.png";
+import avatar from "../../../public/assets/img/LogoKGE.png";
 import footerBg from "../../../public/assets/img/shape/shape-13.png";
 
 const FooterOne = () => {
     return (
       <>
-        <div className="footer__cta">
+        <div className="footer__cta py-5">
           <div className="container">
             <div className="row">
               <div className="col-xl-12">
@@ -18,9 +19,9 @@ const FooterOne = () => {
                 >
                   <div className="row al-center">
                     <div className="col-lg-9">
-                      <div className="footer__cta-area-left">
+                      <div className="footer__cta-area-left pt-10">
                         <h3>Harness the Sun Get Solar Power Today!</h3>
-                        <div className="footer__cta-area-left-btn lg-jc-center">
+                        <div className="footer__cta-area-left-btn lg-jc-center pb-10">
                           <Link className="btn-one" href="/request-quote">
                             Start Today
                           </Link>
@@ -30,7 +31,7 @@ const FooterOne = () => {
                               <span>Need any help</span>
                               <h6>
                                 <Link href="tel:+123(548)5256">
-                                  +66 20776157
+                                  +66 27116724
                                 </Link>
                               </h6>
                             </div>
@@ -51,6 +52,7 @@ const FooterOne = () => {
             </div>
           </div>
         </div>
+
         <div
           className="footer__area"
           style={{ backgroundImage: `url(${footerBg.src})` }}
